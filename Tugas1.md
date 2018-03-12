@@ -27,106 +27,107 @@
 
 * Install php
 
-1. Masuk ke direktori Vagrant via Terminal.
+  1. Masuk ke direktori Vagrant via Terminal.
 	
 		cd vagrant_3
-2. Jalankan virtualisasi.
+  2. Jalankan virtualisasi.
 
 		vagrant up
 
-3. Masuk ke dalam virtualisasi.
+  3. Masuk ke dalam virtualisasi.
 
 		vagrant ssh
 
-4. Pada Terminal, masukkan:
+  4. Pada Terminal, masukkan:
 
 		apt-get install -y php5
-5. Untuk memeriksa apakah php sudah terinstall, ketik `php -m`
-   Jika sudah terinstall akan muncul modul-modul dari php.
+  5. Untuk memeriksa apakah php sudah terinstall, ketik `php -m`
+     Jika sudah terinstall akan muncul modul-modul dari php.
 
 
 * Install mysql
 
-1. Masuk ke direktori Vagrant via Terminal.
+  1. Masuk ke direktori Vagrant via Terminal.
 	
 		cd vagrant_3
-2. Jalankan virtualisasi.
+  2. Jalankan virtualisasi.
 
 		vagrant up
 
-3. Masuk ke dalam virtualisasi.
+  3. Masuk ke dalam virtualisasi.
 
 		vagrant ssh
 
-4. Pada Terminal, masukkan:
+  4. Pada Terminal, masukkan:
 
 		`apt-get install -y mysql-server`
-5. Ketika muncul pop up password, masukkan password yang diinginkan.
-6. Untuk memastikan apakah mysql telah terinstall, masukkan
+  5. Ketika muncul pop up password, masukkan password yang diinginkan.
+  6. Untuk memastikan apakah mysql telah terinstall, masukkan
 
 	`mysql -u root -p`
-   kemudian masukkan password yang sudah diinputkan sebelumnya.
+     kemudian masukkan password yang sudah diinputkan sebelumnya.
 
-7. Jika berhasil terinstall maka akan muncul penjelasan MySQL.
+  7. Jika berhasil terinstall maka akan muncul penjelasan MySQL.
 
 
 * Install nginx
 
-1. Masuk ke direktori Vagrant via Terminal.
+  1. Masuk ke direktori Vagrant via Terminal.
 	
 		cd vagrant_3
-2. Jalankan virtualisasi.
+  2. Jalankan virtualisasi.
 
 		vagrant up
 
-3. Masuk ke dalam virtualisasi.
+  3. Masuk ke dalam virtualisasi.
 
 		vagrant ssh
 
-4. Pada Terminal, masukkan:
+  4. Pada Terminal, masukkan:
 
 		`apt-get install nginx`
-5. Untuk memeriksanya, masukkan:
+  5. Untuk memeriksanya, masukkan:
 
 		'nginx -V'
 
 
 * Install composer
 
-1. Masuk ke direktori Vagrant via Terminal.
+  1. Masuk ke direktori Vagrant via Terminal.
 	
 	`cd vagrant_3`
-2. Jalankan virtualisasi.
+  2. Jalankan virtualisasi.
 
 		vagrant up
 
-3. Masuk ke dalam virtualisasi.
+  3. Masuk ke dalam virtualisasi.
 
 		vagrant ssh
 
-4. Pada Terminal, install curl utility dengan cara
+  4. Pada Terminal, install curl utility dengan cara
 
 	`apt-get install curl`
-5. Download installer dengan cara
+  5. Download installer dengan cara
 
 	`curl -s https://getcomposer.org/install | php`
-6. Pindahkan file **composer.phar** 
+  6. Pindahkan file **composer.phar** 
 
 	mv composer.phar/ usr/local/bin/composer
-7. Untuk memeriksanya, masukkan
+  7. Untuk memeriksanya, masukkan
 
 	`composer -V`
 
 ##### Provisioning telah selesai dilakukan.
 
+
 * Cara clone github
 
-1. Buka Terminal, masukkan
+  1. Buka Terminal, masukkan
 
 	`git clone https://github.com/fathoniadi/pelatihan-laravel.git`
 
-2. Sinkronisasikan folder dengan mengubah file Vagrantfile.
-   Tambahkan
+  2. Sinkronisasikan folder dengan mengubah file Vagrantfile.
+     Tambahkan
 
    		config.vm.synced_folder "pelatihan-laravel/", "/var/www/web"
 
@@ -134,56 +135,56 @@
    		
    		config.vm.synced_folder "src/", "/var/www"
 
-3. Jalankan virtualisasi.
+  3. Jalankan virtualisasi.
 		
 		vagrant up
 
-4. Masuk ke dalam virtualisasi.
+  4. Masuk ke dalam virtualisasi.
 		
 		vagrant ssh
 
 
 * Cara setting root document nginx
 
-1. Masuk ke dalam virtualisasi.
+  1. Masuk ke dalam virtualisasi.
 		
 		vagrant ssh
 
-2. Buka pengaturan default nginx, masukkan
+  2. Buka pengaturan default nginx, masukkan
 
 	sudo nano /etc/nginx/sites-enabled/default
 
-3. Pada file default, ubah
+  3. Pada file default, ubah
 	
 	root
 
-   menjadi
+     menjadi
 
    	root/var/www/web
-
-   kemudian exit.
+ 
+     kemudian exit.
 
 
 * Cara mengubah port webserver ke port 8080
 
-1. Masuk ke dalam virtualisasi.
+  1. Masuk ke dalam virtualisasi.
 		
 		vagrant ssh
 
-2. Pada Terminal, masukkan
+  2. Pada Terminal, masukkan
 
 	sudo nano /etc/apache2/port-conf
 
-3. Ubah `listen 80` menjadi `listen 8080`, close nano.
+  3. Ubah `listen 80` menjadi `listen 8080`, close nano.
 
-4. Cek pada browser dengan ketik "localhost:8080", maka akan keluar "welcome to nginx".
+  4. Cek pada browser dengan ketik "localhost:8080", maka akan keluar "welcome to nginx".
 
 
 * Cara mengubah port MySQL ke port 6969
 
-1. Buka Terminal, masukkan 
+  1. Buka Terminal, masukkan 
 
 	sudo nano /etc/mysql/my-cnf
 
-2. Ubah `port 3306` menjadi `port 6969`.
+  2. Ubah `port 3306` menjadi `port 6969`.
 

@@ -4,7 +4,7 @@
 	Yosua Nove P        5113100071
 	Nadia Zhafirah U    5113100087
 
-### Soal Tugas
+## Soal Tugas
 1. Buat vagrant virtualbox dan buat user 'awan' dengan password 'buayakecil'.
 2. Buat vagrant virtualbox dan lakukan provisioning install Phoenix Web Framework
 3. Buat vagrant virtualbox dan lakukan provisioning install:
@@ -18,9 +18,10 @@
 	1. Squid proxy
 	2. Bind9
 
-#### Sebelum mengerjakan jawaban, lakukan instalasi Virtualbox, Vagrant, dan membuat virtualisasi seperti yang ada di modul Cloud. 
+##### Sebelum mengerjakan jawaban, lakukan instalasi Virtualbox, Vagrant, dan membuat virtualisasi seperti yang ada di modul Cloud. 
 
-### Jawaban
+
+## Jawaban
 
 #### No. 3
 

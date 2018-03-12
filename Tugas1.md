@@ -29,7 +29,7 @@
 
 1. Masuk ke direktori Vagrant via Terminal.
 	
-	`cd vagrant3`
+		cd vagrant_3
 2. Jalankan virtualisasi.
 
 		vagrant up
@@ -40,10 +40,8 @@
 
 4. Pada Terminal, masukkan:
 
-		`apt-get install -y php5`
-5. Untuk memeriksa apakah php sudah terinstall, ketik
-	
-	`php -m`
+		apt-get install -y php5
+5. Untuk memeriksa apakah php sudah terinstall, ketik `php -m`
    Jika sudah terinstall akan muncul modul-modul dari php.
 
 
@@ -51,7 +49,7 @@
 
 1. Masuk ke direktori Vagrant via Terminal.
 	
-	`cd vagrant3`
+		cd vagrant_3
 2. Jalankan virtualisasi.
 
 		vagrant up
@@ -76,7 +74,7 @@
 
 1. Masuk ke direktori Vagrant via Terminal.
 	
-	`cd vagrant3`
+		cd vagrant_3
 2. Jalankan virtualisasi.
 
 		vagrant up
@@ -97,7 +95,7 @@
 
 1. Masuk ke direktori Vagrant via Terminal.
 	
-	`cd vagrant3`
+	`cd vagrant_3`
 2. Jalankan virtualisasi.
 
 		vagrant up

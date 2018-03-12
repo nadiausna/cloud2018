@@ -30,18 +30,18 @@
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
-		cd vagrant_3
+			cd vagrant_3
   2. Jalankan virtualisasi.
 
-		vagrant up
+			vagrant up
 
   3. Masuk ke dalam virtualisasi.
 
-		vagrant ssh
+			vagrant ssh
 
   4. Pada Terminal, masukkan:
 
-		apt-get install -y php5
+			apt-get install -y php5
   5. Untuk memeriksa apakah php sudah terinstall, ketik `php -m`
      Jika sudah terinstall akan muncul modul-modul dari php.
 
@@ -49,22 +49,22 @@
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
-		cd vagrant_3
+			cd vagrant_3
   2. Jalankan virtualisasi.
 
-		vagrant up
+			vagrant up
 
   3. Masuk ke dalam virtualisasi.
 
-		vagrant ssh
+			vagrant ssh
 
   4. Pada Terminal, masukkan:
 
-		`apt-get install -y mysql-server`
+			`apt-get install -y mysql-server`
   5. Ketika muncul pop up password, masukkan password yang diinginkan.
   6. Untuk memastikan apakah mysql telah terinstall, masukkan
 
-	`mysql -u root -p`
+		`mysql -u root -p`
      kemudian masukkan password yang sudah diinputkan sebelumnya.
 
   7. Jika berhasil terinstall maka akan muncul penjelasan MySQL.
@@ -74,48 +74,48 @@
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
-		cd vagrant_3
+			cd vagrant_3
   2. Jalankan virtualisasi.
 
-		vagrant up
+			vagrant up
 
   3. Masuk ke dalam virtualisasi.
 
-		vagrant ssh
+			vagrant ssh
 
   4. Pada Terminal, masukkan:
 
-		`apt-get install nginx`
+			`apt-get install nginx`
   5. Untuk memeriksanya, masukkan:
 
-		'nginx -V'
+			'nginx -V'
 
 
 ###### Install composer
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
-	`cd vagrant_3`
+			`cd vagrant_3`
   2. Jalankan virtualisasi.
-
-		vagrant up
+			
+			vagrant up
 
   3. Masuk ke dalam virtualisasi.
 
-		vagrant ssh
+			vagrant ssh
 
   4. Pada Terminal, install curl utility dengan cara
 
-	`apt-get install curl`
+		`apt-get install curl`
   5. Download installer dengan cara
 
-	`curl -s https://getcomposer.org/install | php`
+		`curl -s https://getcomposer.org/install | php`
   6. Pindahkan file **composer.phar** 
 
 	mv composer.phar/ usr/local/bin/composer
   7. Untuk memeriksanya, masukkan
 
-	`composer -V`
+		`composer -V`
 
 ##### Provisioning telah selesai dilakukan.
 
@@ -137,11 +137,11 @@
 
   3. Jalankan virtualisasi.
 		
-		vagrant up
+			vagrant up
 
   4. Masuk ke dalam virtualisasi.
 		
-		vagrant ssh
+			vagrant ssh
 
 
 ###### Cara setting root document nginx
@@ -156,11 +156,11 @@
 
   3. Pada file default, ubah
 	
-	root
+			root
 
      menjadi
 
-   	root/var/www/web
+			root/var/www/web
  
      kemudian exit.
 

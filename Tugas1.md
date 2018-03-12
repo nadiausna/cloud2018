@@ -25,7 +25,8 @@
 #### No. 3
 (Nama folder : vagrant3)
 
-* Install php
+
+###### Install php
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
@@ -44,8 +45,7 @@
   5. Untuk memeriksa apakah php sudah terinstall, ketik `php -m`
      Jika sudah terinstall akan muncul modul-modul dari php.
 
-
-* Install mysql
+###### Install mysql
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
@@ -70,7 +70,7 @@
   7. Jika berhasil terinstall maka akan muncul penjelasan MySQL.
 
 
-* Install nginx
+###### Install nginx
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
@@ -91,7 +91,7 @@
 		'nginx -V'
 
 
-* Install composer
+###### Install composer
 
   1. Masuk ke direktori Vagrant via Terminal.
 	
@@ -120,7 +120,7 @@
 ##### Provisioning telah selesai dilakukan.
 
 
-* Cara clone github
+###### Cara clone github
 
   1. Buka Terminal, masukkan
 
@@ -144,7 +144,7 @@
 		vagrant ssh
 
 
-* Cara setting root document nginx
+###### Cara setting root document nginx
 
   1. Masuk ke dalam virtualisasi.
 		
@@ -165,7 +165,7 @@
      kemudian exit.
 
 
-* Cara mengubah port webserver ke port 8080
+###### Cara mengubah port webserver ke port 8080
 
   1. Masuk ke dalam virtualisasi.
 		
@@ -180,7 +180,7 @@
   4. Cek pada browser dengan ketik "localhost:8080", maka akan keluar "welcome to nginx".
 
 
-* Cara mengubah port MySQL ke port 6969
+###### Cara mengubah port MySQL ke port 6969
 
   1. Buka Terminal, masukkan 
 

@@ -24,6 +24,7 @@
 
 
 ### No. 2
+Pada pengerjaan jawaban, ganti port 8080 menjadi 8082, kemudian tambahkan `config.vm.network "forwarded_port", guest: 442, host: 8442`. Hal ini dilakukan agar Vagrant dapat diakses.
 
 1. Masuk ke direktori Vagrant via Terminal.
 	

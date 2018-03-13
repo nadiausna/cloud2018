@@ -4,7 +4,7 @@
 	Yosua Nove P        5113100071
 	Nadia Zhafirah U    5113100087
 
-### Soal Tugas
+## Soal Tugas
 1. Buat vagrant virtualbox dan buat user 'awan' dengan password 'buayakecil'.
 2. Buat vagrant virtualbox dan lakukan provisioning install Phoenix Web Framework
 3. Buat vagrant virtualbox dan lakukan provisioning install:
@@ -20,9 +20,33 @@
 
 #### Sebelum mengerjakan jawaban, lakukan instalasi Virtualbox, Vagrant, dan membuat virtualisasi seperti yang ada di modul Cloud. Pengerjaan jawaban hanya dimulai dalam kondisi siap menjalankan vagrant.
 
-### Jawaban
+## Jawaban
 
-#### No. 3
+
+### No. 2
+
+1. Masuk ke direktori Vagrant via Terminal.
+	
+	`cd vagrant_2`
+2. Jalankan virtualisasi.
+	vagrant up
+
+3. Masuk ke dalam virtualisasi.
+	vagrant ssh
+
+4. Tambahkan Erlang Solution repository
+	wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+
+5. Run `sudo apt-get update`
+
+6. Install Erlang/OTP platform dan semua aplikasinya
+
+`sudo apt-get install esl-erlang`
+
+7. Install Elixir: `sudo apt-get install elixir`
+
+
+### No. 3
 (Nama folder : vagrant3)
 
 * Install php
